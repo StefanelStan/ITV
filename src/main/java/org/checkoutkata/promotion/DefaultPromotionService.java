@@ -8,6 +8,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * Default implementation of PromotionService
+ */
 public class DefaultPromotionService implements PromotionService {
     private final Map<SKU, Set<Promotion>> promotions = new EnumMap<>(SKU.class);
 
@@ -32,6 +35,4 @@ public class DefaultPromotionService implements PromotionService {
     public Set<Promotion> getPromotionsForSKU(SKU sku) {
         return promotions.getOrDefault(sku, new HashSet<>());
     }
-
-
 }

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.checkoutkata.checkout"},{"l":"org.checkoutkata.model"},{"l":"org.checkoutkata.pricing"},{"l":"org.checkoutkata.promotion"}];updateSearchResults();
