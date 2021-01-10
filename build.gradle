@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.itv'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testCompile("org.junit.jupiter:junit-jupiter-params:5.7.0")
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testCompile group: 'org.mockito', name: 'mockito-junit-jupiter', version: '3.6.28'
+}
+
+test {
+    useJUnitPlatform()
+}
